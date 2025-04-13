@@ -1,0 +1,48 @@
+# Compiled binary files
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+*.dll
+*.exe
+*.app
+*.log
+
+# Visual Studio files
+.vscode/
+.vs/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Entity Framework Migrations
+Migrations/
+
+# ASP.NET specific
+wwwroot/
+node_modules/
+dist/
+bower_components/
+
+# Others
+*.db
+*.sqlite
+*.pdb
+*.cache
+*.zip
+
+# Configuration files
+appsettings.Development.json
+secrets.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
