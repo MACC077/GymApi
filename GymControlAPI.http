@@ -1,0 +1,6 @@
+@GymControlAPI_HostAddress = http://localhost:5136
+
+GET {{GymControlAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

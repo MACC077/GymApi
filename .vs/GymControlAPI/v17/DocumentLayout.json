@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\usuariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\usuariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 360,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T04:01:02.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuarioDTO.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "DTOs\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:37:39.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwBQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:34:26.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioRepo.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\UsuarioRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepo.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\UsuarioRepo.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepo.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwC0AAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:47:29.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IUsuario.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:47:03.511Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
