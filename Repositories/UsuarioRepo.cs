@@ -80,7 +80,6 @@ namespace GymControlAPI.Repositories
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
             if (usuario == null) return false;
             usuario.Activo = activo;
-            _context.Usuarios.Update(usuario);
             await SaveChangesAsync();
             return true;
         }

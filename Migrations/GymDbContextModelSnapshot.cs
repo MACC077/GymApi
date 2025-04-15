@@ -22,6 +22,108 @@ namespace GymControlAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("GymControlAPI.Models.Asistencia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("HoraEntrada")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan?>("HoraSalida")
+                        .HasColumnType("time");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Asistencias");
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.Pago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("FechaFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaPago")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Monto")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("PlanId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoPagoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Pagos");
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.Plan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DuracionDias")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Planes");
+                });
+
             modelBuilder.Entity("GymControlAPI.Models.Rol", b =>
                 {
                     b.Property<int>("Id")
@@ -43,6 +145,29 @@ namespace GymControlAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.TipoPago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TipoPagos");
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Usuario", b =>
@@ -79,6 +204,9 @@ namespace GymControlAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("PlanId")
+                        .HasColumnType("int");
+
                     b.Property<int>("RolId")
                         .HasColumnType("int");
 
@@ -88,20 +216,51 @@ namespace GymControlAPI.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PlanId");
+
                     b.HasIndex("RolId");
 
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("GymControlAPI.Models.Asistencia", b =>
+                {
+                    b.HasOne("GymControlAPI.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.Pago", b =>
+                {
+                    b.HasOne("GymControlAPI.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
             modelBuilder.Entity("GymControlAPI.Models.Usuario", b =>
                 {
-                    b.HasOne("GymControlAPI.Models.Rol", "Rol")
+                    b.HasOne("GymControlAPI.Models.Plan", null)
+                        .WithMany("Usuarios")
+                        .HasForeignKey("PlanId");
+
+                    b.HasOne("GymControlAPI.Models.Rol", null)
                         .WithMany("Usuarios")
                         .HasForeignKey("RolId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.Navigation("Rol");
+            modelBuilder.Entity("GymControlAPI.Models.Plan", b =>
+                {
+                    b.Navigation("Usuarios");
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Rol", b =>

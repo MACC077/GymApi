@@ -22,6 +22,7 @@ builder.Services.AddDbContext<GymDbContext>(options =>
 
 // Registro del repositorio
 builder.Services.AddScoped<IUsuario, UsuarioRepo>();
+builder.Services.AddScoped<IRol, RolRepo>();
 
 var app = builder.Build();
 

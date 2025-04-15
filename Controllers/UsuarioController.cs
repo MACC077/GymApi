@@ -118,8 +118,8 @@ namespace GymControlAPI.Controllers
         }
 
         [HttpPut]
-        [Route("ChangeStateUsuario/{id}/{activo}")]
-        public async Task<IActionResult> ChangeStateUsuario(int id, bool activo)
+        [Route("ChangeStateUsuario/{id}")]
+        public async Task<IActionResult> ChangeStateUsuario(int id, [FromBody] bool activo)
         {
             var actualizado = await _usuarioRepo.ChangeStateUsuario(id, activo);
 

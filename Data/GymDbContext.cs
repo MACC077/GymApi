@@ -12,6 +12,9 @@ namespace GymControlAPI.Data
         
         public DbSet<Usuario> Usuarios { get; set; } = null!;
         public DbSet<Rol> Roles { get; set; } = null!;
-
+        public DbSet<Plan> Planes { get; set; } = null!;
+        public DbSet<Pago> Pagos { get; set; } = null!;
+        public DbSet<Asistencia> Asistencias { get; set; } = null!;
+        public DbSet<TipoPago> TipoPagos { get; set; } = null!;
     }
 }
