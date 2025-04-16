@@ -72,9 +72,6 @@ namespace GymControlAPI.Migrations
                     b.Property<DateTime>("FechaPago")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Monto")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("PlanId")
                         .HasColumnType("int");
 
@@ -85,8 +82,6 @@ namespace GymControlAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Pagos");
                 });
@@ -158,7 +153,7 @@ namespace GymControlAPI.Migrations
                     b.Property<bool>("Activo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("FechaRegistro")
+                    b.Property<DateTime?>("FechaRegistro")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
@@ -218,23 +213,10 @@ namespace GymControlAPI.Migrations
 
                     b.HasIndex("PlanId");
 
-                    b.HasIndex("RolId");
-
                     b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Asistencia", b =>
-                {
-                    b.HasOne("GymControlAPI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("GymControlAPI.Models.Pago", b =>
                 {
                     b.HasOne("GymControlAPI.Models.Usuario", "Usuario")
                         .WithMany()
@@ -250,20 +232,9 @@ namespace GymControlAPI.Migrations
                     b.HasOne("GymControlAPI.Models.Plan", null)
                         .WithMany("Usuarios")
                         .HasForeignKey("PlanId");
-
-                    b.HasOne("GymControlAPI.Models.Rol", null)
-                        .WithMany("Usuarios")
-                        .HasForeignKey("RolId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Plan", b =>
-                {
-                    b.Navigation("Usuarios");
-                });
-
-            modelBuilder.Entity("GymControlAPI.Models.Rol", b =>
                 {
                     b.Navigation("Usuarios");
                 });

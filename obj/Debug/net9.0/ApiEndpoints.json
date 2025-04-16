@@ -1,5 +1,105 @@
 [
   {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "AddPlan",
+    "RelativePath": "Plan/AddPlan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plan",
+        "Type": "GymControlAPI.Models.Plan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "ChangeStatePlan",
+    "RelativePath": "Plan/ChangeStatePlan/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "activo",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "DeletePlan",
+    "RelativePath": "Plan/DeletePlan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "GetAllPlanes",
+    "RelativePath": "Plan/GetAllPlanes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "GetPlanesById",
+    "RelativePath": "Plan/GetPlanesById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PlanController",
+    "Method": "UpdatePlan",
+    "RelativePath": "Plan/UpdatePlan/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "plan",
+        "Type": "GymControlAPI.Models.Plan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymControlAPI.Controllers.RolController",
     "Method": "AddRol",
     "RelativePath": "Rol/AddRol",
@@ -94,6 +194,106 @@
       {
         "Name": "activo",
         "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "AddTipoPago",
+    "RelativePath": "TipoPago/AddTipoPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoPago",
+        "Type": "GymControlAPI.Models.TipoPago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "ChangeStateTipoPago",
+    "RelativePath": "TipoPago/ChangeStateTipoPago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "activo",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "DeleteTipoPago",
+    "RelativePath": "TipoPago/DeleteTipoPago/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "GetAllTipoPagos",
+    "RelativePath": "TipoPago/GetAllTipoPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "GetTipoPagoById",
+    "RelativePath": "TipoPago/GetTipoPagoById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.TipoPagoController",
+    "Method": "UpdateTipoPago",
+    "RelativePath": "TipoPago/UpdateTipoPago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tipoPago",
+        "Type": "GymControlAPI.Models.TipoPago",
         "IsRequired": true
       }
     ],
