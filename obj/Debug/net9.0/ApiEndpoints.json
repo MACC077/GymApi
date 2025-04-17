@@ -1,5 +1,105 @@
 [
   {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "AddPago",
+    "RelativePath": "Pago/AddPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pago",
+        "Type": "GymControlAPI.Models.Pago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "ChangeStatePago",
+    "RelativePath": "Pago/ChangeStatePago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "DeletePago",
+    "RelativePath": "Pago/DeletePago/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "GetAllPagos",
+    "RelativePath": "Pago/GetAllPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "GetPagosById",
+    "RelativePath": "Pago/GetPagosById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.PagoController",
+    "Method": "UpdatePago",
+    "RelativePath": "Pago/UpdatePago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pago",
+        "Type": "GymControlAPI.Models.Pago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymControlAPI.Controllers.PlanController",
     "Method": "AddPlan",
     "RelativePath": "Plan/AddPlan",

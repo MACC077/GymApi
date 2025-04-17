@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymControlAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c257ec695bd84f610517d9d3f0d891d4883ab08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef2d714764e3613bc62a750308049dbcb51511af")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymControlAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymControlAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

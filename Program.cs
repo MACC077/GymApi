@@ -25,6 +25,7 @@ builder.Services.AddScoped<IUsuario, UsuarioRepo>();
 builder.Services.AddScoped<IRol, RolRepo>();
 builder.Services.AddScoped<ITipoPago, TipoPagoRepo>();
 builder.Services.AddScoped<IPlan, PlanRepo>();
+builder.Services.AddScoped<IPago, PagoRepo>();
 
 var app = builder.Build();
 
