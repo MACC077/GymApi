@@ -1,8 +1,6 @@
-﻿using System.Text.Json.Serialization;
-
-namespace GymControlAPI.Models
+﻿namespace GymControlAPI.DTOs
 {
-    public class Asistencia
+    public class AsistenciaDTO
     {
         public int? Id { get; set; } //Primary Key Id
         public DateTime Fecha { get; set; } //Fecha de la asistencia
@@ -12,7 +10,6 @@ namespace GymControlAPI.Models
         public DateTime FechaRegistro { get; set; } = DateTime.Now; //Fecha de registro de la asistencia
         //Relacion con la tabla usuarios
         public int UsuarioId { get; set; }
-        //[JsonIgnore]
-        //public Usuario Usuario { get; set; } = null!;
+        public string UsuarioNombre { get; set; } = null!;
     }
 }

@@ -3,68 +3,44 @@
   "WorkspaceRootPath": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\asistenciarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\asistenciarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\iasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\iasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\usuariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\usuariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\pagorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\pagorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\ipago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\ipago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\models\\tipopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:models\\tipopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\iplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\iplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\rolrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\rolrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\itipopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\itipopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\irol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\irol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\tipopagorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\tipopagorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\repositories\\interfaces\\ipago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:repositories\\interfaces\\ipago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|d:\\escitorio\\desarrollo\\.net_csharp\\gymcontrolapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D3ADAE-C170-48CA-A933-92CF25CED098}|GymControlAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,76 +49,74 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 360,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 404,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PagoController.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\PagoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\PagoController.cs",
-              "RelativeToolTip": "Controllers\\PagoController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAUwGwAAAA5AAAAAAAAAA==",
+              "Title": "AsistenciaRepo.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\AsistenciaRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\AsistenciaRepo.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\AsistenciaRepo.cs",
+              "RelativeToolTip": "Repositories\\AsistenciaRepo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowCYAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:26:54.524Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PagoRepo.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\PagoRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\PagoRepo.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\PagoRepo.cs",
-              "RelativeToolTip": "Repositories\\PagoRepo.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwFsAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T00:33:56.765Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pago.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Pago.cs",
-              "RelativeDocumentMoniker": "Models\\Pago.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Pago.cs",
-              "RelativeToolTip": "Models\\Pago.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T02:58:42.848Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioRepo.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\UsuarioRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\UsuarioRepo.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\UsuarioRepo.cs",
-              "RelativeToolTip": "Repositories\\UsuarioRepo.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAwwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T00:46:59.6Z",
+              "WhenOpened": "2025-04-18T22:52:48.534Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Asistencia.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Asistencia.cs",
-              "RelativeDocumentMoniker": "Models\\Asistencia.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Asistencia.cs",
-              "RelativeToolTip": "Models\\Asistencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AsistenciaController.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:11:25.622Z",
+              "WhenOpened": "2025-04-18T23:23:16.543Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "Controllers\\PagoController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T23:24:40.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITipoPago.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\ITipoPago.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ITipoPago.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\ITipoPago.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ITipoPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T23:08:00.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAsistencia.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IAsistencia.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAsistencia.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IAsistencia.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IAsistencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T22:45:56.144Z",
               "EditorCaption": ""
             },
             {
@@ -151,7 +125,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "Asistencia.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Asistencia.cs",
+              "RelativeDocumentMoniker": "Models\\Asistencia.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Asistencia.cs",
+              "RelativeToolTip": "Models\\Asistencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T02:11:25.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IUsuario.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T23:04:17.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "IPago.cs",
               "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IPago.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPago.cs",
@@ -164,132 +164,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T01:27:30.74Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UsuarioDTO.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "DTOs\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T00:47:56.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RolRepo.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\RolRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\RolRepo.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\RolRepo.cs",
-              "RelativeToolTip": "Repositories\\RolRepo.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:52:14.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Plan.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Plan.cs",
-              "RelativeDocumentMoniker": "Models\\Plan.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\Plan.cs",
-              "RelativeToolTip": "Models\\Plan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T02:49:09.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ITipoPago.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\ITipoPago.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ITipoPago.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\ITipoPago.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\ITipoPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:27:51.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TipoPago.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\TipoPago.cs",
-              "RelativeDocumentMoniker": "Models\\TipoPago.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Models\\TipoPago.cs",
-              "RelativeToolTip": "Models\\TipoPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:27:00.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPlan.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IPlan.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPlan.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IPlan.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\IPlan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:35:35.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IRol.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IRol.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IRol.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\Interfaces\\IRol.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\IRol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T00:34:47.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TipoPagoRepo.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\TipoPagoRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\TipoPagoRepo.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\TipoPagoRepo.cs",
-              "RelativeToolTip": "Repositories\\TipoPagoRepo.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T00:27:25.955Z"
             }
           ]
         },
         {
-          "DockedWidth": 360,
+          "DockedWidth": 316,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAcwIIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PagoRepo.cs",
+              "DocumentMoniker": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\PagoRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\PagoRepo.cs",
+              "ToolTip": "D:\\Escitorio\\Desarrollo\\.NET_CSharp\\GymControlAPI\\Repositories\\PagoRepo.cs",
+              "RelativeToolTip": "Repositories\\PagoRepo.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T00:55:57.955Z",
+              "WhenOpened": "2025-04-18T23:08:13.085Z",
               "EditorCaption": ""
             }
           ]
