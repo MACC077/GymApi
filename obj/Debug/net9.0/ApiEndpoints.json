@@ -1,5 +1,105 @@
 [
   {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "AddAsistencia",
+    "RelativePath": "Asistencia/AddAsistencia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "asistencia",
+        "Type": "GymControlAPI.Models.Asistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "ChangeStateAsistencia",
+    "RelativePath": "Asistencia/ChangeStateAsistencia/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "activo",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "DeleteAsistencia",
+    "RelativePath": "Asistencia/DeleteAsistencia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "GetAllAsistencias",
+    "RelativePath": "Asistencia/GetAllAsistencias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "GetAsistenciaById",
+    "RelativePath": "Asistencia/GetAsistenciaById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "UpdateAsistencia",
+    "RelativePath": "Asistencia/UpdateAsistencia/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "asistencia",
+        "Type": "GymControlAPI.Models.Asistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymControlAPI.Controllers.PagoController",
     "Method": "AddPago",
     "RelativePath": "Pago/AddPago",

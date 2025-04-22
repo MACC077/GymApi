@@ -33,24 +33,19 @@ namespace GymControlAPI.Migrations
                     b.Property<bool>("Activo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("Fecha")
+                    b.Property<DateTime?>("FechaRegistro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaRegistro")
+                    b.Property<DateTime?>("HoraEntrada")
                         .HasColumnType("datetime2");
 
-                    b.Property<TimeSpan>("HoraEntrada")
-                        .HasColumnType("time");
-
-                    b.Property<TimeSpan?>("HoraSalida")
-                        .HasColumnType("time");
+                    b.Property<DateTime?>("HoraSalida")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Asistencias");
                 });
@@ -104,7 +99,7 @@ namespace GymControlAPI.Migrations
                     b.Property<int>("DuracionDias")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaRegistro")
+                    b.Property<DateTime?>("FechaRegistro")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
@@ -214,17 +209,6 @@ namespace GymControlAPI.Migrations
                     b.HasIndex("PlanId");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("GymControlAPI.Models.Asistencia", b =>
-                {
-                    b.HasOne("GymControlAPI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Usuario", b =>

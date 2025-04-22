@@ -24,17 +24,16 @@ namespace GymControlAPI.Repositories
                select new AsistenciaDTO
                {
                    Id = a.Id,
-                   Fecha = a.Fecha,
                    HoraEntrada = a.HoraEntrada,
                    HoraSalida = a.HoraSalida,
                    Activo = a.Activo,
-                   FechaRegistro = a.FechaRegistro,
+                   FechaRegistro = a.FechaRegistro ?? default(DateTime), // Handle nullable value
                    UsuarioId = u.Id,
                    UsuarioNombre = u.Nombre
                }
             ).ToListAsync();
 
-            return asistencias;    
+            return asistencias;
         }
         public async Task<AsistenciaDTO> GetAsistenciaById(int id, bool incluirInactivos = false)
         {
@@ -46,11 +45,10 @@ namespace GymControlAPI.Repositories
                 select new AsistenciaDTO
                 {
                     Id = a.Id,
-                    Fecha = a.Fecha,
                     HoraEntrada = a.HoraEntrada,
                     HoraSalida = a.HoraSalida,
                     Activo = a.Activo,
-                    FechaRegistro = a.FechaRegistro,
+                    FechaRegistro = a.FechaRegistro ?? default(DateTime), // Handle nullable value
                     UsuarioId = u.Id,
                     UsuarioNombre = u.Nombre
                 }
