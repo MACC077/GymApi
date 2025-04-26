@@ -79,6 +79,18 @@ namespace GymControlAPI.Repositories
             return await SaveChanges();
         }
 
+        public async Task<bool> UpdateExitDate(int id)
+        {
+            var asistenciaExistente = await _context.Asistencias.FirstOrDefaultAsync(a => a.Id == id);
+
+            if (asistenciaExistente == null)
+            {
+                return false;
+            }
+            asistenciaExistente.HoraSalida = DateTime.Now;
+            return await SaveChanges();
+        }
+
         public async Task<bool> DeleteAsistencia(int id)
         {
             var asistencia = await _context.Asistencias.FirstOrDefaultAsync(a => a.Id == id);

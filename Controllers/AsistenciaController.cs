@@ -88,6 +88,20 @@ namespace GymControlAPI.Controllers
             return Ok(resultado);
         }
 
+        [HttpPut]
+        [Route("UpdateAsistenciaSalida/{id}")]
+        public async Task<IActionResult> UpdateAsistenciaSalida(int id)
+        {
+            var asistenciaExistente = await _asistenciaRepo.GetAsistenciaById(id);
+
+            if (asistenciaExistente == null)
+            {
+                return NotFound("Asistencia no encontrada");
+            }
+            var resultado = await _asistenciaRepo.UpdateExitDate(id);
+            return Ok(resultado);
+        }
+
         [HttpDelete]
         [Route("DeleteAsistencia/{id}")]
         public async Task<IActionResult> DeleteAsistencia(int id)
