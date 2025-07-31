@@ -100,6 +100,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GymControlAPI.Controllers.AsistenciaController",
+    "Method": "UpdateAsistenciaSalida",
+    "RelativePath": "Asistencia/UpdateAsistenciaSalida/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.LoginController",
+    "Method": "GetUserInfo",
+    "RelativePath": "Login/GetUserInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymControlAPI.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "Login/LoginAuth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "GymControlAPI.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymControlAPI.Controllers.PagoController",
     "Method": "AddPago",
     "RelativePath": "Pago/AddPago",

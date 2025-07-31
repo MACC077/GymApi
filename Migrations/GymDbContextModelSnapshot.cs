@@ -47,6 +47,8 @@ namespace GymControlAPI.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UsuarioId");
+
                     b.ToTable("Asistencias");
                 });
 
@@ -77,6 +79,8 @@ namespace GymControlAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Pagos");
                 });
@@ -208,7 +212,27 @@ namespace GymControlAPI.Migrations
 
                     b.HasIndex("PlanId");
 
+                    b.HasIndex("RolId");
+
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.Asistencia", b =>
+                {
+                    b.HasOne("GymControlAPI.Models.Usuario", null)
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GymControlAPI.Models.Pago", b =>
+                {
+                    b.HasOne("GymControlAPI.Models.Usuario", null)
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Usuario", b =>
@@ -216,6 +240,12 @@ namespace GymControlAPI.Migrations
                     b.HasOne("GymControlAPI.Models.Plan", null)
                         .WithMany("Usuarios")
                         .HasForeignKey("PlanId");
+
+                    b.HasOne("GymControlAPI.Models.Rol", null)
+                        .WithMany()
+                        .HasForeignKey("RolId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("GymControlAPI.Models.Plan", b =>

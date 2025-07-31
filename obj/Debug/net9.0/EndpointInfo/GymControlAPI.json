@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "GymControlAPI",
-    "version": "1.0"
+    "version": "v1"
   },
   "paths": {
     "/Asistencia/GetAllAsistencias": {
@@ -155,6 +155,29 @@
         }
       }
     },
+    "/Asistencia/UpdateAsistenciaSalida/{id}": {
+      "put": {
+        "tags": [
+          "Asistencia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Asistencia/DeleteAsistencia/{id}": {
       "delete": {
         "tags": [
@@ -170,6 +193,49 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Login/LoginAuth": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Login/GetUserInfo": {
+      "get": {
+        "tags": [
+          "Login"
         ],
         "responses": {
           "200": {
@@ -1106,6 +1172,20 @@
         },
         "additionalProperties": false
       },
+      "LoginDTO": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrasena": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Pago": {
         "type": "object",
         "properties": {
@@ -1261,6 +1341,11 @@
           "rolId": {
             "type": "integer",
             "format": "int32"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1288,6 +1373,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Introduce el token JWT con el formato: Bearer {token}",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

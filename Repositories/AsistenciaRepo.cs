@@ -29,19 +29,40 @@ namespace GymControlAPI.Repositories
                    Activo = a.Activo,
                    FechaRegistro = a.FechaRegistro ?? default(DateTime), // Handle nullable value
                    UsuarioId = u.Id,
-                   UsuarioNombre = u.Nombre
+                   UsuarioNombre = $"{u.Nombre} {u.Apellido}"
                }
             ).ToListAsync();
 
             return asistencias;
+        }
+        public async Task<IEnumerable<AsistenciaDTO>> GetAsistenciaUsersById(int id, bool incluirInactivos = false)
+        {
+            var asistencia = await (
+                from a in _context.Asistencias
+                join u in _context.Usuarios on a.UsuarioId equals u.Id
+                where a.UsuarioId == id
+                && (incluirInactivos || a.Activo)
+                select new AsistenciaDTO
+                {
+                    Id = a.Id,
+                    HoraEntrada = a.HoraEntrada,
+                    HoraSalida = a.HoraSalida,
+                    Activo = a.Activo,
+                    FechaRegistro = a.FechaRegistro ?? default(DateTime), // Handle nullable value
+                    UsuarioId = u.Id,
+                    UsuarioNombre = u.Nombre
+                }
+            ).ToListAsync();
+
+            return asistencia;
         }
         public async Task<AsistenciaDTO> GetAsistenciaById(int id, bool incluirInactivos = false)
         {
             var asistencia = await (
                 from a in _context.Asistencias
                 join u in _context.Usuarios on a.UsuarioId equals u.Id
-                where a.Activo || incluirInactivos
-                && a.Id == id
+                where a.Id == id
+                && (incluirInactivos || a.Activo)
                 select new AsistenciaDTO
                 {
                     Id = a.Id,
@@ -62,11 +83,18 @@ namespace GymControlAPI.Repositories
             await SaveChanges(); // Ensure SaveChanges is awaited
             return asistencia;
         }
-        public async Task<Asistencia> UpdateAsistencia(Asistencia asistencia)
+        public async Task<Asistencia?> UpdateAsistencia(Asistencia asistencia)
         {
-            _context.Asistencias.Update(asistencia);
-            await SaveChanges();
-            return asistencia;
+            try
+            {
+                _context.Asistencias.Update(asistencia);
+                await SaveChanges();
+                return asistencia;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
         public async Task<bool> ChangeStateAsistencia(int id, bool activo)
         {

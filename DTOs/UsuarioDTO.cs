@@ -12,5 +12,7 @@
         public bool Activo { get; set; } 
         public int RolId { get; set; }
         public string RolNombre { get; set; } //Nombre del rol
+        public int PlanId { get; set; } //Id del plan asociado al usuario
+        public string Plan { get; set; } //Nombre del plan asociado al usuario
     }
 }

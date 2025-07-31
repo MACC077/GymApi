@@ -31,7 +31,7 @@ namespace GymControlAPI.Repositories
                     Activo = p.Activo,
                     FechaFin = p.FechaFin,
                     UsuarioId = u.Id,
-                    UsuarioNombre = u.Nombre,
+                    UsuarioNombre = $"{u.Nombre} {u.Apellido}",
                     PlanId = pl.Id,
                     PlanNombre = pl.Nombre
                 }
@@ -57,7 +57,7 @@ namespace GymControlAPI.Repositories
                     Activo = p.Activo,
                     FechaFin = p.FechaFin,
                     UsuarioId = u.Id,
-                    UsuarioNombre = u.Nombre,
+                    UsuarioNombre = $"{u.Nombre} {u.Apellido}",
                     PlanId = pl.Id,
                     PlanNombre = pl.Nombre
                 }

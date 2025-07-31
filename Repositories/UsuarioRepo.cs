@@ -13,11 +13,12 @@ namespace GymControlAPI.Repositories
         {
             _context = context;
         }
-        public async Task<UsuarioDTO> GetUsuarioById(int id, bool incluirinactivos = false)
+        public async Task<UsuarioDTO> GetUsuarioByIdDTO(int id, bool incluirinactivos = false)
         {
             var resultado = await(
                 from u in _context.Usuarios
                 join r in _context.Roles on u.RolId equals r.Id
+                join p in _context.Planes on u.PlanId equals p.Id
                 where u.Activo || incluirinactivos //Si el usuario está activo o si se permite incluir inactivos
                 && u.Id == id
                 select new UsuarioDTO
@@ -31,18 +32,26 @@ namespace GymControlAPI.Repositories
                     FechaRegistro = u.FechaRegistro,
                     Activo = u.Activo,
                     RolId = u.RolId,
-                    RolNombre = r.Nombre
+                    RolNombre = r.Nombre,
+                    Plan = p.Nombre,
+                    PlanId = Convert.ToInt32(p.Id)
                 }
             ).FirstOrDefaultAsync();
 
             return resultado;
-            //await _context.Usuarios.Include(u => u.Rol).FirstOrDefaultAsync(u => u.Id == id);
+        }
+        public async Task<Usuario> GetUsuarioById(int id, bool incluirinactivos = false)
+        {
+            var resultado = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Id == id && (u.Activo || incluirinactivos));
+            return resultado;
         }
         public async Task<IEnumerable<UsuarioDTO>> GetAllUsuarios(bool incluirinactivos = false)
         {
             var resultado = await (
                 from u in _context.Usuarios
                 join r in _context.Roles on u.RolId equals r.Id
+                join p in _context.Planes on u.PlanId equals p.Id
                 where u.Activo || incluirinactivos //Si el usuario está activo o si se permite incluir inactivos
                 select new UsuarioDTO
                 {
@@ -55,7 +64,9 @@ namespace GymControlAPI.Repositories
                     FechaRegistro = u.FechaRegistro,
                     Activo = u.Activo,
                     RolId = u.RolId,
-                    RolNombre = r.Nombre
+                    RolNombre = r.Nombre,
+                    Plan = p.Nombre,
+                    PlanId = Convert.ToInt32(p.Id) 
                 }
             ).ToListAsync();
             

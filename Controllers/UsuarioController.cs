@@ -1,5 +1,6 @@
 ﻿using GymControlAPI.Models;
 using GymControlAPI.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymControlAPI.Controllers
@@ -14,6 +15,7 @@ namespace GymControlAPI.Controllers
             _usuarioRepo = usuarioRepo;
         }
 
+        [Authorize(Roles = "1")]
         [HttpGet]
         [Route("GetAllUsuarios")]
         public async Task<IActionResult> GetAllUsuarios()
@@ -22,21 +24,22 @@ namespace GymControlAPI.Controllers
 
             if (usuarios == null || !usuarios.Any())
             {
-                return NotFound("No se encontraron usuarios.");
+                return NotFound(new { message = "No se encontraron usuarios." });
             }
 
             return Ok(usuarios);
         }
 
+        [Authorize(Roles = "1")]
         [HttpGet]
         [Route("GetUsuarioById/{id}")]
         public async Task<IActionResult> GetUsuarioById(int id)
         {
-            var usuario = await _usuarioRepo.GetUsuarioById(id);
+            var usuario = await _usuarioRepo.GetUsuarioByIdDTO(id);
 
             if (usuario == null)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { message = "Usuario no encontrado." });
             }
 
             return Ok(usuario);
@@ -48,22 +51,22 @@ namespace GymControlAPI.Controllers
         {
             if (usuario == null)
             {
-                return BadRequest("El usuario no puede ser nulo.");
+                return BadRequest(new { message = "El usuario no puede ser nulo." });
             }
 
             if (string.IsNullOrEmpty(usuario.Nombre) || string.IsNullOrEmpty(usuario.Apellido))
             {
-                return BadRequest("El nombre y apellido son obligatorios.");
+                return BadRequest(new { message = "El nombre y apellido son obligatorios." });
             }
 
             if (string.IsNullOrEmpty(usuario.Correo) || string.IsNullOrEmpty(usuario.Contrasena))
             {
-                return BadRequest("El correo y la contraseña son obligatorios.");
+                return BadRequest(new { message = "El correo y la contraseña son obligatorios." });
             }
 
             if (string.IsNullOrEmpty(usuario.Telefono) || string.IsNullOrEmpty(usuario.Direccion))
             {
-                return BadRequest("El teléfono y la dirección son obligatorios.");
+                return BadRequest(new { message = "El teléfono y la dirección son obligatorios." });
             }
 
             var usuarioNuevo = new Usuario
@@ -75,6 +78,7 @@ namespace GymControlAPI.Controllers
                 Telefono = usuario.Telefono,
                 Direccion = usuario.Direccion,
                 RolId = usuario.RolId,
+                PlanId = usuario.PlanId,
                 FechaRegistro = DateTime.Now,
                 Activo = true
             };
@@ -89,7 +93,7 @@ namespace GymControlAPI.Controllers
         {
             if (usuario == null)
             {
-                return BadRequest("El usuario no puede ser nulo.");
+                return BadRequest(new { message = "El usuario no puede ser nulo." });
             }
 
             //Validamos que el usuario exista
@@ -97,26 +101,22 @@ namespace GymControlAPI.Controllers
 
             if (usuarioExistente == null)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { message = "Usuario no encontrado." });
             }
 
-            var usuarioUpdate = new Usuario
-            {
-                Id = id,//Este es el Id que viene por parametro
-                Nombre = usuario.Nombre,
-                Apellido = usuario.Apellido,
-                Correo = usuario.Correo,
-                Telefono = usuario.Telefono,
-                Direccion = usuario.Direccion,
-                FechaRegistro = usuarioExistente.FechaRegistro,
-                RolId = usuario.RolId,
-                Activo = usuario.Activo
-            };
+            usuarioExistente.Nombre = usuario.Nombre;
+            usuarioExistente.Apellido = usuario.Apellido;
+            usuarioExistente.Correo = usuario.Correo;
+            usuarioExistente.Telefono = usuario.Telefono;
+            usuarioExistente.Direccion = usuario.Direccion;
+            usuarioExistente.RolId = usuario.RolId;
+            usuarioExistente.PlanId = usuario.PlanId;
 
-            var resultado = await _usuarioRepo.UpdateUsuario(usuarioUpdate);
+            var resultado = await _usuarioRepo.UpdateUsuario(usuarioExistente);
             return Ok(resultado);
         }
 
+        [Authorize(Roles = "1,5")]
         [HttpPut]
         [Route("ChangeStateUsuario/{id}")]
         public async Task<IActionResult> ChangeStateUsuario(int id, [FromBody] bool activo)
@@ -125,12 +125,13 @@ namespace GymControlAPI.Controllers
 
             if (!actualizado)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { message =  "Usuario no encontrado." });
             }
                
-            return Ok("Estado actualizado correctamente.");
+            return Ok(new { message =  "Estado actualizado correctamente." });
         }
 
+        [Authorize(Roles = "1")]
         [HttpDelete]
         [Route("DeleteUsuario/{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
@@ -139,13 +140,14 @@ namespace GymControlAPI.Controllers
 
             if (usuario == null)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { message = "Usuario no encontrado." });
             }
+
             var resultado = await _usuarioRepo.DeleteUsuario(id);
 
             if (!resultado)
             {
-                return BadRequest("No se pudo eliminar el usuario.");
+                return BadRequest(new { message = "No se pudo eliminar el usuario." });
             }
 
             return NoContent();

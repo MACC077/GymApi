@@ -19,12 +19,6 @@ D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\scopedcss\bun
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.build.json
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.development.json
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets\msbuild.GymControlAPI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets\msbuild.GymControlAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.GymControlAPI.props
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.GymControlAPI.props
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.GymControlAPI.props
-D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.pack.json
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\GymContr.656D58C3.Up2Date
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\GymControlAPI.dll
@@ -166,3 +160,9 @@ D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\bin\Debug\net9.0\runtimes\win\
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\GymControlAPI.sourcelink.json
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\Escitorio\Desarrollo\.NET_CSharp\GymControlAPI\obj\Debug\net9.0\staticwebassets.build.json.cache

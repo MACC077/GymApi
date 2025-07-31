@@ -14,6 +14,8 @@
 
         //Relacion con la tabla roles
         public int RolId { get; set; } //Foreign Key
+        //Relacion con la tabla Planes
+        public int ?PlanId { get; set; } //Foreign Key
         //public Rol Rol { get; set; } //Rol del usuario
     }
 }
