@@ -13,7 +13,7 @@ obj/
 *.exe
 *.app
 *.log
-
+*.suo
 # Visual Studio files
 .vscode/
 .vs/
