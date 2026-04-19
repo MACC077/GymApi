@@ -1,48 +1,59 @@
-# Compiled binary files
+# ========================
+# Build outputs
+# ========================
 bin/
 obj/
 
-# User-specific files
-*.user
+# ========================
+# Visual Studio
+# ========================
+.vs/
+.vscode/
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Build results
+# ========================
+# .NET
+# ========================
 *.dll
 *.exe
-*.app
-*.log
-*.suo
-# Visual Studio files
-.vscode/
-.vs/
+*.pdb
+*.cache
 
-# NuGet packages
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Node / Angular
+# ========================
+node_modules/
+dist/
+.angular/
+
+# ========================
+# Packages
+# ========================
 *.nupkg
 packages/
 
-# Entity Framework Migrations
-Migrations/
-
-# ASP.NET specific
-wwwroot/
-node_modules/
-dist/
-bower_components/
-
-# Others
-*.db
-*.sqlite
-*.pdb
-*.cache
-*.zip
-
-# Configuration files
+# ========================
+# Config sensibles
+# ========================
 appsettings.Development.json
 secrets.json
 
-# OS-generated files
+# ========================
+# Base de datos local
+# ========================
+*.db
+*.sqlite
+
+# ========================
+# OS
+# ========================
 .DS_Store
 Thumbs.db
-
